@@ -3,7 +3,7 @@
 FROM php:8.1-apache
 
 ### Enable apache vhost
-COPY default-ssl.conf /etc/apache2/sites-available/000-default.conf
+COPY docker/default-ssl.conf /etc/apache2/sites-available/000-default.conf
 RUN a2ensite 000-default
 
 ### Make sure the /var/www/html directory exists
