@@ -12,6 +12,8 @@ RUN mkdir -p /var/www/html
 RUN rm -rf /var/www/html/*
 WORKDIR /var/www/html/
 
+ENV APP_ENV="prod"
+
 # Enable root user
 USER root
 
